@@ -40,7 +40,8 @@
     "precommit": "lint-staged && npm test",
     "prettier": "prettier --config ./.prettierrc --write  \"./src/**/*.{ts,tsx}\"",
     "sort": "sort-package-json",
-    "test": "jest"
+    "test": "jest",
+    "postinstall": "rollup -c"
   },
   "lint-staged": {
     "*.{ts,tsx}": [
